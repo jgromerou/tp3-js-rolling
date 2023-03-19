@@ -57,10 +57,13 @@ document.write('<ul>');
 for (let indicePos = 0; indicePos < sumaTiradas.length; indicePos++) {
   document.write(
     `<li>Suma que fueron iguales a <strong>${
-      indicePos + 2
-    }</strong> aparecieron <strong>${
-      sumaTiradas[indicePos]
-    } </strong>veces</li>`
+      indicePos + 2 // corresponde a la suma igual a 2 en la tirada en la posición 0 del array.
+    }</strong> aparecieron <strong>${sumaTiradas[indicePos]} `
   );
+  if (sumaTiradas[indicePos] === 1) {
+    document.write('</strong>vez</li>');
+  } else {
+    document.write('</strong>veces</li>');
+  }
 }
 document.write('</ul>');
