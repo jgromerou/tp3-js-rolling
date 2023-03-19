@@ -8,7 +8,7 @@ function esMayuscula(letra) {
 function esMinuscula(letra) {
   return letra === letra.toLowerCase();
 }
-function comprobar(cadenaTexto) {
+function comprobarMayusMinusAmbas(cadenaTexto) {
   let letraMayuscula = 0;
   let letraMinuscula = 0;
   for (
@@ -50,10 +50,10 @@ document.write(
   '<h2>Comprobar si las cadenas de textos sólo tienen Mayúsculas, Minúsculas o ambas</h2>'
 );
 document.write('<hr>');
-comprobar('');
+comprobarMayusMinusAmbas('');
 document.write('<hr>');
-comprobar('ROLLING CODE');
+comprobarMayusMinusAmbas('ROLLING CODE');
 document.write('<hr>');
-comprobar('rolling');
+comprobarMayusMinusAmbas('rolling');
 document.write('<hr>');
-comprobar('Pato');
+comprobarMayusMinusAmbas('Pato');
