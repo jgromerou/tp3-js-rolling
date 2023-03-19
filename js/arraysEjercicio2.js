@@ -11,11 +11,16 @@ let ciudades = [];
 let ciudad = '';
 do {
   ciudad = prompt('Introduce un nombre de ciudad: ');
-  if (ciudad != null) {
+  if (ciudad != null && ciudad != '') {
     ciudad.toUpperCase();
     ciudades.push(ciudad);
+    console.log(ciudad);
+  } else {
+    if (ciudad == '') {
+      alert('No ingresaste ninguna palabra. Por favor, Ingrese un valor.');
+    }
   }
-} while (ciudad != null);
+} while (ciudad != null || ciudad == '');
 
 console.log(ciudades);
 
