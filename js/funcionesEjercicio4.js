@@ -4,7 +4,9 @@
 function tablaMultiplicar(num) {
   //Armar la tabla
   document.write('<table><thead>');
-  document.write(`<tr><th>Tabla de Multiplicar del ${num}</th></tr>`);
+  document.write(
+    `<tr><th>Tabla de Multiplicar del ${num} del 1 al 10</th></tr>`
+  );
   document.write('<tbody>');
   for (let i = 1; i <= 10; i++) {
     document.write('<tr>');
@@ -17,7 +19,7 @@ function tablaMultiplicar(num) {
 
 let numero = '';
 do {
-  numero = prompt('Ingrese el número a multiplicar:');
+  numero = parseInt(prompt('Ingrese el número a multiplicar:'));
 } while (isNaN(numero) || numero.length === 0);
 
-tablaMultiplicar(parseInt(numero));
+tablaMultiplicar(numero);
